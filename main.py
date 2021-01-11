@@ -17,7 +17,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.common.exceptions import UnexpectedAlertPresentException
 from selenium.webdriver.chrome.options import Options
 
-#made by client a.k.a Me!
+#made by teilc
 #Copyright Sike Just Kidding
 
 
