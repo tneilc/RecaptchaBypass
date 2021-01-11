@@ -64,11 +64,11 @@ with sample_audio as source:
     audio = r.record(source)
 
 #audio to text
-key=r.recognize_google(audio)
-print("[INFO] Recaptcha Passcode: %s"%key)
+thingy=r.recognize_google(audio)
+print("Said: %s"%thingy)
 
 #submitting
-driver.find_element_by_id("audio-response").send_keys(key.lower())
+driver.find_element_by_id("audio-response").send_keys(thingy.lower())
 driver.find_element_by_id("audio-response").send_keys(Keys.ENTER)
 driver.switch_to.default_content()
 time.sleep(2)
